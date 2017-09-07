@@ -32,36 +32,7 @@ $("div[id^=library]").each(function() {
 $( function() {
     $( "#menupopup" ).enhanceWithin().popup();
 });
-$( function() {
-    $( "#popambush" ).enhanceWithin().popup();
-});
-$( function() {
-    $( "#popbestow" ).enhanceWithin().popup();
-});
-$( function() {
-    $( "#popinsight" ).enhanceWithin().popup();
-});
-$( function() {
-    $( "#popintimidate" ).enhanceWithin().popup();
-});
-$( function() {
-    $( "#poplimited" ).enhanceWithin().popup();
-});
-$( function() {
-    $( "#popnoattach" ).enhanceWithin().popup();
-});
-$( function() {
-    $( "#poppillage" ).enhanceWithin().popup();
-});
-$( function() {
-    $( "#poprenown" ).enhanceWithin().popup();
-});
-$( function() {
-    $( "#popstealth" ).enhanceWithin().popup();
-});
-$( function() {
-    $( "#popterminal" ).enhanceWithin().popup();
-});
+
 // end of the script to allow popups across pages
 
 

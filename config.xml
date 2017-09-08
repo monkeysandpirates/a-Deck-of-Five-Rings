@@ -20,8 +20,8 @@
   <preference name="disable-cursor" value="false"/>
   <preference name="android-minSdkVersion" value="14"/>
   <preference name="android-installLocation" value="auto"/>  
-  <preference name="loadUrlTimeoutValue" value="700000" />
-  <icon src="icon.png"/>
+   <preference name="loadUrlTimeoutValue" value="700000" />
+ <icon src="icon.png"/>
   <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
   <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi"/>
   <icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi"/>

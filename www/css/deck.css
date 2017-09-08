@@ -4833,9 +4833,12 @@ display: block;
   }
   
   .expansion {
-  float:right;
+  float:right; }
+ 
+  .fiveringsdb {
+    float:right;
  font-size:x-large;  }
-  
+ 
    .faq{
  font-size:smaller;
  color:#1F618D;

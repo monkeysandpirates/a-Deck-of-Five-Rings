@@ -15,7 +15,7 @@ $.event.special.swipe.horizontalDistanceThreshold = 30; // Swipe horizontal disp
 $.event.special.swipe.durationThreshold = 500;  // More time than this, and it isn't a swipe.
 $.event.special.swipe.verticalDistanceThreshold = 75; // Swipe vertical displacement must be less than this.
 
-
+// load html menus into divs
 $("div[id^=menu]").each(function() {
     var match = this.id.match(/\w+$/)[0];
     $(this).load('menus/' + match + '.html');
@@ -26,11 +26,84 @@ $("div[id^=library]").each(function() {
     $(this).load('library/' + match + '.html');
 });
 
+// load the card data into the front page search - hidden. Last one needs the extra lines.
+$.get('menus/data-crab.html',function(data) {
+   $('#search-all').append( data );  
+});
+
+$.get('menus/data-crane.html',function(data) {
+   $('#search-all').append( data );
+});
+
+$.get('menus/data-dragon.html',function(data) {
+   $('#search-all').append( data );
+});
+
+$.get('menus/data-lion.html',function(data) {
+   $('#search-all').append( data );
+});
+
+$.get('menus/data-phoenix.html',function(data) {
+   $('#search-all').append( data ); 
+});
+
+$.get('menus/data-scorpion.html',function(data) {
+   $('#search-all').append( data );
+});
+
+$.get('menus/data-unicorn.html',function(data) {
+   $('#search-all').append( data );
+});
+
+$.get('menus/data-neutral.html',function(data) {
+   $('#search-all').append( data );
+   $( "ul#search-all li" ).addClass( "ui-screen-hidden" );
+//   $( "ul#search-all li" ).addClass( "ui-li-static" );
+   $( "ul#search-all li" ).not(".dontchange").addClass( "ui-body-inherit" );   
+});
+
+
+// load the card data into the clan pages - not hidden
+$.get('menus/data-crab.html',function(data) {
+   $('#search-crab').append( data ); 
+});
+
+$.get('menus/data-crane.html',function(data) {
+   $('#search-crane').append( data ); 
+});
+
+$.get('menus/data-dragon.html',function(data) {
+   $('#search-dragon').append( data ); 
+});
+
+$.get('menus/data-lion.html',function(data) {
+   $('#search-lion').append( data ); 
+});
+
+$.get('menus/data-phoenix.html',function(data) {
+   $('#search-phoenix').append( data ); 
+});
+
+$.get('menus/data-scorpion.html',function(data) {
+   $('#search-scorpion').append( data ); 
+});
+
+$.get('menus/data-unicorn.html',function(data) {
+   $('#search-unicorn').append( data ); 
+});
+
+$.get('menus/data-neutral.html',function(data) {
+   $('#search-neutral').append( data ); 
+});
+
+
+
+
 // start of the script to allow popups across pages
 
 // Instantiate the popup on DOMReady, and enhance its contents
 $( function() {
-    $( "#menupopup" ).enhanceWithin().popup();
+    $( "#floatnavpopup" ).enhanceWithin().popup();
 });
 
 // end of the script to allow popups across pages

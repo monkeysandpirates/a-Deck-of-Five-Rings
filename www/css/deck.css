@@ -60,16 +60,19 @@ text-align: center;
  a:link {
  color: black !important;
  font-weight:normal !important;
+ text-decoration: none !important;
   }
  
  a:visited{
  color: black !important;
  font-weight:normal !important;
+ text-decoration: none !important;
   }
   
   a:active{
   color: grey !important;
  font-weight:normal !important;
+ text-decoration: none !important;
    }
    
    
@@ -109,6 +112,10 @@ display: block;
     .listIcon{
       float:right
     }
+	
+.library p {
+	padding: 25px;
+}
  
 div#fadewrap { display: none; }  
 
@@ -117,7 +124,8 @@ div#fadewrap { display: none; }
 padding: .7em 2px .7em 2px;
 background-color: white;
 }
-  
+
+
   
 @font-face {
   font-family: 'fiveringsdb';

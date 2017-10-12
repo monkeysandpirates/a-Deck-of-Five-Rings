@@ -1,112 +1,477 @@
-<i></i><!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-<title>a Deck of Five Rings</title>
-<script src="js/jquery.js" type="text/javascript"></script>
-<script src="js/jquery.mobile.js" type="text/javascript"></script>
-<script src="js/fastclick.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/deck.css" type="text/css"></link>
-<meta name="viewport" content="width=device-width"/>
+  <title>a Deck of Five Rings</title>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
 </head>
 <body>
-
+<div id="fadewrap">
 
 <a href="#page1"><div class="titlescroll"><h1>&#160;a Deck of Five Rings</h1></div></a>
-<div><a href="#floatnavpopup" data-rel="popup" data-transition="none" data-position-to="#floatnav"><img src="img/floatnav.png" class="floatnav" id="floatnav"/></a></div>
+
 <!--                    MAIN MENU                               -->
 
-<div id="page1" data-role="page" data-prev="" data-next="#menucrab"><div class="wrapper"><ul data-role="listview" data-inset="true"><h2>&#160;&#160;&#160;
-	 			Main Menu
+<div id="page1" data-role="page"><div class="wrapper">
+    <div data-role="content">   
 
-</h2></ul>
 
-    <div data-role="content">
-        <ul data-role="listview" data-icon="false" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search all cards..." data-inset="true" id="search-all">
+	
+
+	<p>
+
+<!--	<div data-role="fieldcontain"> -->
+<ul id="external" data-role="listview" data-icon="false" data-filter="true" data-filter-placeholder="Search, then select clan..." data-inset="true">
 		
 
-</ul>
+          
+<li data-role="list-divider" data-link="Crabclan"> <span class="ui-icon ui-icon-plus ui-icon-shadow listIcon">&nbsp;</span>Crab Clan</li>
+							
+<li class="hidden Crabclan packcore" data-filtertext="l5r01031:Character:d.Dynasty::Borderlands Defender:t.Bushi"><a><div><img src="img/l5r01031.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01025:Character:d.Dynasty::Eager Scout:t.Bushi:t.Scout"><a><div><img src="img/l5r01025.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01026:Character:d.Dynasty::Hida Guardian:t.Bushi"><a><div><img src="img/l5r01026.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01037:Character:d.Dynasty::Hida Kisada:t.Bushi:t.Champion"><a><div><img src="img/l5r01037.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01034:Character:d.Dynasty::Hida Tomonatsu:t.Bushi"><a><div><img src="img/l5r01034.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01130:Character:d.Conflict::Hiruma Ambusher:t.Bushi:t>Scout"><a><div><img src="img/l5r01130.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01028:Character:d.Dynasty::Hiruma Yojimbo:t.Bushi:t.Yojimbo"><a><div><img src="img/l5r01028.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01032:Character:d.Dynasty::Intimidating Hida:t.Bushi"><a><div><img src="img/l5r01032.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01027:Character:d.Dynasty::Kaiu Envoy:t.Bushi:k.Courtesy:k.Sincerity"><a><div><img src="img/l5r01027.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01036:Character:d.Dynasty::Kaiu Shuichi:t.Bushi:t.Engineer:k.Covert"><a><div><img src="img/l5r01036.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01029:Character:d.Dynasty::Shrewd Yasuki:t.Courtier"><a><div><img src="img/l5r01029.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01035:Character:d.Dynasty::Steadfast Witch Hunter:t.Shugenja:t.Earth"><a><div><img src="img/l5r01035.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01131:Character:d.Conflict::Stoic Gunso:i.1:t.Bushi"><a><div><img src="img/l5r01131.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01030:Character:d.Dynasty::Vanguard Warrior:t.Bushi"><a><div><img src="img/l5r01030.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01033:Character:d.Dynasty::Vengeful Berserker:t.Bushi:t.Berserker"><a><div><img src="img/l5r01033.jpg" class="cardimg"></div></a></li>
 
-     <ul data-role="listview" data-icon="false" data-inset="true">
-<li data-role="list-divider">Clans</li>
-<li> <a href="#menucrab">Crab<span class="fiveringsdb"><span class="icon-clan-crab"></span></span></a></li>
-<li> <a href="#menucrane">Crane<span class="fiveringsdb"><span class="icon-clan-crane"></span></span></a></li>
-<li> <a href="#menudragon">Dragon<span class="fiveringsdb"><span class="icon-clan-dragon"></span></span></a></li>
-<li> <a href="#menulion">Lion<span class="fiveringsdb"><span class="icon-clan-lion"></span></span></a></li>
-<li> <a href="#menuphoenix">Phoenix<span class="fiveringsdb"><span class="icon-clan-phoenix"></span></span></a></li>
-<li> <a href="#menuscorpion">Scorpion<span class="fiveringsdb"><span class="icon-clan-scorpion"></span></span></a></li>
-<li> <a href="#menuunicorn">Unicorn<span class="fiveringsdb"><span class="icon-clan-unicorn"></span></span></a></li>
-<li> <a href="#menuneutral">Neutral<span class="fiveringsdb"></a></li>
-<li data-role="list-divider">Library</li>
-<li> <a href="#menuexpansions">Expansions & Spoilers</a></li>
-<li> <a href="#librarykeywords">Keywords</a></li>
-<li> <a href="#libraryabout">About</a></li>
-<li data-role="list-divider">Advanced Search Techniques</li>
-<li data-filtertext="search tips"><p>You can search for <b>"character', "event", "attachment", "holding", "province", "stronghold" or "role". Card numbers, names, clans, decks, traits, keywords, elements, packs, and influence costs.</b></p>
-	<p>Go to a specific clan's page to filter only for cards in that clan.
-	<p>The search will return all instances of the search term.  Which means that the more you type, the more refined the search will be. But also that you usually only need to type the first few letters of your search to get relevent results.
-	<p>For advanced searches, add the following characters before your search term.</p>
-	<p><b>"c."</b> to search for members of a particular <b>clan</b>.  Example "c.lion", or just "c.l".</p>
-	<p><b>"d."</b> to search for <b>deck types</b>.  Example "d.conflict", or just "d.c". Options are Conflict, Dynasty, Province, Role, Stronghold.</p>
-	<p><b>"e."</b> to search for <b>element types</b>.  Example "e.void", or just "e.v". Options are Air, Earth, Fire, Void, Water.</p>
-	<p><b>"i."</b> will search for all cards who can be bought with <b>influence</b>, or "i'3", will search for cards with an influence cost of 3.</p>
-	<p><b>"k."</b> to search for <b>keywords</b>.  Example "k.covert". Or just type "k." for a full list of characters with keywords.</p>
-	<p><b>"p."</b> to search for <b>specific packs</b>.  Example "p.core", or "p.toa" for Tears of Amaterasu (once it's released).</p>
-	<p><b>"t."</b> to search for <b>traits</b>.  Example "t.bushi".</p></p></li></ul>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01134:Attachment:d.Conflict::Jade Tetsubo:i.2:t.Jade:t.Weapon"><a><div><img src="img/l5r01134.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01132:Attachment:d.Conflict::Reprieve:i.1:t.Condition"><a><div><img src="img/l5r01132.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01133:Attachment:d.Conflict::Watch Commander:i.3:t.Follower"><a><div><img src="img/l5r01133.jpg" class="cardimg"></div></a></li>
+
+<li class="hidden Crabclan packcore" data-filtertext="l5r01135:Event:d.Conflict::Levy:i.3"><a><div><img src="img/l5r01135.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01136:Event:d.Conflict::Rebuild:i.2"><a><div><img src="img/l5r01136.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01138:Event:d.Conflict::The Mountain Does Not Fall:i.3:t.Technique"><a><div><img src="img/l5r01138.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01137:Event:d.Conflict::Way of the Crab:t.Philosophy"><a><div><img src="img/l5r01137.jpg" class="cardimg"></div></a></li>
+
+<li class="hidden Crabclan packcore" data-filtertext="l5r01001:d.Stronghold::Shiro Nishiyama:t.Castle"><a><div><img src="img/l5r01001.jpg" class="cardimg"></div></a></li>
+
+<li class="hidden Crabclan packcore" data-filtertext="l5r01038:Attachment:d.Dynasty::Borderlands Fortifications:t.Battlefield"><a><div><img src="img/l5r01038.jpg" class="cardimg"></div></a></li>
+<li class="hidden Crabclan packcore" data-filtertext="l5r01039:Attachment:d.Dynasty::Funeral Pyre:t.Ritual"><a><div><img src="img/l5r01039.jpg" class="cardimg"></div></a></li>
+
+<li class="hidden Crabclan packcore" data-filtertext="l5r01008:d.Province::Defend the Wall:e.Earth"><a><div><img src="img/l5r01008.jpg" class="cardimg"></div></a></li>
+						
+						
+               
+<li data-role="list-divider" data-link="Craneclan"> <span class="ui-icon ui-icon-plus ui-icon-shadow listIcon">&nbsp;</span>Crane Clan</li>
+							
+<li class="hidden Craneclan packcore" data-filtertext="l5r01040:Character:d.Dynasty::Asahina Artisan:t.Shugenja:t.Air"><a><div><img src="img/l5r01040.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01050:Character:d.Dynasty::Asahina Storyteller:t.Courtier:t.Shugenja:t.Air:k.Sincerity"><a><div><img src="img/l5r01050.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01042:Character:d.Dynasty::Brash Samurai:t.Bushi"><a><div><img src="img/l5r01042.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01043:Character:d.Dynasty::Catious Scout:t.Bushi:t.Scout"><a><div><img src="img/l5r01043.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01046:Character:d.Dynasty::Daidoji Nerishma:t.Bushi:t.Scout"><a><div><img src="img/l5r01046.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01047:Character:d.Dynasty::Doji Challenger:t.Bushi:t.Duelist"><a><div><img src="img/l5r01047.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01044:Character:d.Dynasty::Dojo Gift Giver:t.Courtier"><a><div><img src="img/l5r01044.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01052:Character:d.Dynasty::Doji Hotaru:t.Bushi:t.Champion"><a><div><img src="img/l5r01052.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01041:Character:d.Dynasty::Doji Whisperer:t.Courtier"><a><div><img src="img/l5r01041.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01051:Character:d.Dynasty::Guest of Honor:t.Courtier"><a><div><img src="img/l5r01051.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01048:Character:d.Dynasty::Kakita Asami:t.Courtier"><a><div><img src="img/l5r01048.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01049:Character:d.Dynasty::Kakita Kaezin:t.Bushi:t.Duelist:t.Kenshinzen"><a><div><img src="img/l5r01049.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01140:Character:d.Conflict::Political Rival:i.2:t.Courtier:k.Covert"><a><div><img src="img/l5r01140.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01139:Character:d.Conflict::Steward of Law:i.1:t.Courtier:t.Scholar"><a><div><img src="img/l5r01139.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01045:Character:d.Dynasty::Savy Politician:t.Courtier"><a><div><img src="img/l5r01045.jpg" class="cardimg"></div></a></li>
+
+<li class="hidden Craneclan packcore" data-filtertext="l5r01141:Attachment:d.Conflict::Above Question:i.2:t.Condition"><a><div><img src="img/l5r01141.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01142:Attachment:d.Conflict::Duelist Training:i.1:t.Technique"><a><div><img src="img/l5r01142.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01143:Attachment:d.Conflict::Height of Fashion:i.3:t.Condition"><a><div><img src="img/l5r01143.jpg" class="cardimg"></div></a></li>
+
+<li class="hidden Craneclan packcore" data-filtertext="l5r01147:Event:d.Conflict::Admit Defeat:i.2"><a><div><img src="img/l5r01147.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01148:Event:d.Conflict::Noble Sacrifice:i.2"><a><div><img src="img/l5r01148.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01144:Event:d.Conflict::The Perfect Gift:i.1"><a><div><img src="img/l5r01144.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01145:Event:d.Conflict::Voice of Honor:i.2"><a><div><img src="img/l5r01145.jpg" class="cardimg"></div></a></li>
+<li class="hidden Craneclan packcore" data-filtertext="l5r01146:Event:d.Conflict::Way of the Crane:t.Philosophy"><a><div><img src="img/l5r01146.jpg" class="cardimg"></div></a></li>
+
+<li class="hidden Craneclan packcore" data-filtertext="l5r01002:d.Stronghold::Shizuka Toshi:t.City"><a><div><img src="img/l5r01002.jpg" class="cardimg"></div></a></li>
+
+<li class="hidden Craneclan packcore" data-filtertext="l5r01053:Attachment:d.Dynasty::Artisan Academy:t.Academy"><a><div><img src="img/l5r01053.jpg" class="cardimg"></div></a></li>
+
+<li class="hidden Craneclan packcore" data-filtertext="l5r01009:d.Province::The Art of Peace:e.Air"><a><div><img src="img/l5r01009.jpg" class="cardimg"></div></a></li>
+				
+				
+				
+<li data-role="list-divider" data-link="Dragonclan"> <span class="ui-icon ui-icon-plus ui-icon-shadow listIcon">&nbsp;</span>Dragon Clan</li>
+
+<!--    Dragon Clan Characters    -->
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01056:Character:d.Dynasty::Agasha Swordsmith:t.Shugenja:t.Fire"><a><div><img src="img/l5r01056.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01063:Character:d.Dynasty::Ascetic Visionary:t.Monk:t.Tattooed:k.No attachments except Monk or Tattoo"><a><div><img src="img/l5r01063.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01054:Character:d.Dynasty::Doomed Shugenja:t.Sugenja:t.Fire:k.Limited"><a><div><img src="img/l5r01054.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01060:Character:d.Dynasty::Enlightened Warrior:t.Bushi"><a><div><img src="img/l5r01060.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01061:Character:d.Dynasty::Kitsuki Investigator:t.Courtier"><a><div><img src="img/l5r01061.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01057:Character:d.Dynasty::Mirumoto Prodigy:t.Bushi:t.Duelist"><a><div><img src="img/l5r01057.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01062:Character:d.Dynasty::Mirumoto Raitsugu:t.Bushi"><a><div><img src="img/l5r01062.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01058:Character:d.Dynasty::Niten Adept:t.Bushi"><a><div><img src="img/l5r01058.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01064:Character:d.Dynasty::Niten Master:t.Bushi"><a><div><img src="img/l5r01064.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01059:Character:d.Dynasty::Seeker of Enlightenment:t.Monk:t.Tattooed"><a><div><img src="img/l5r01059.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01149:Character:d.Conflict::Tattooed Wanderer:i.2:t.Monk:t.Tattooed"><a><div><img src="img/l5r01149.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01055:Character:d.Dynasty::Togashi Initiate:t.Monk:t.Tattooed"><a><div><img src="img/l5r01055.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01150:Character:d.Conflict::Togashi Kazue:i.2:t.Monk:t.Tattooed"><a><div><img src="img/l5r01150.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01065:Character:d.Dynasty::Togashi Yokuni:t.Bushi:t.Sugenja:t.Champion"><a><div><img src="img/l5r01065.jpg" class="cardimg"></div></a></li>
 
 
+<!--  Dragon Clan Attachments    -->
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01151:Attachment:d.Conflict::Ancestral Daisho:i.2:t.Weapon:k.Ancestral"><a><div><img src="img/l5r01151.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01152:Attachment:d.Conflict::Daimyo’s Favor:i.2:t.Condition"><a><div><img src="img/l5r01152.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01153:Attachment:d.Conflict::Kitsuki’s Method:i.2:t.Technique:k.Ancestral"><a><div><img src="img/l5r01153.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01154:Attachment:d.Conflict::Way of the Dragon:t.Philosophy"><a><div><img src="img/l5r01154.jpg" class="cardimg"></div></a></li>
+
+<!--  Dragon Clan Events    -->
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01158:Event:d.Conflict::Indomitable Will:i.2"><a><div><img src="img/l5r01158.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01155:Event:d.Conflict::Let Go:i.2"><a><div><img src="img/l5r01155.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01156:Event:d.Conflict::Mantra of Fire:i.2:t.Kiho:t.Fire"><a><div><img src="img/l5r01156.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01159:Event:d.Conflict::Mirumoto’s Fury:i.2"><a><div><img src="img/l5r01159.jpg" class="cardimg"></div></a></li>
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01157:Event:d.Conflict::Tranquility:i.2"><a><div><img src="img/l5r01157.jpg" class="cardimg"></div></a></li>
+
+<!--  Dragon Clan Strongholds    -->
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01003:d.Stronghold::Mountain’s Anvil Castle:t.Castle"><a><div><img src="img/l5r01003.jpg" class="cardimg"></div></a></li>
+
+<!--  Dragon Clan Holdings    -->
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01066:Attachment:d.Dynasty::Secluded Temple:t.Shrine"><a><div><img src="img/l5r01066.jpg" class="cardimg"></div></a></li>
+
+<!--  Dragon Clan Provinces    -->
+<li class="hidden Dragonclan packcore" data-filtertext="l5r01010:d.Province::Restoration of Balance:e.Fire"><a><div><img src="img/l5r01010.jpg" class="cardimg"></div></a></li>
+
+<!--  Dragon Clan Roles    -->
+
+
+<li data-role="list-divider" data-link="Lionclan"> <span class="ui-icon ui-icon-plus ui-icon-shadow listIcon">&nbsp;</span>Lion Clan</li>
+
+<!--    Lion Clan Characters  -->
+<li class="hidden Lionclan packcore" data-filtertext="l5r01071:Character:d.Dynasty::Akodo Gunso:t.Bushi:k.Pride"><a><div><img src="img/l5r01071.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01079:Character:d.Dynasty::Akodo Toturi:t.Bushi:t.Champion"><a><div><img src="img/l5r01079.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01072:Character:d.Dynasty::Deathseeker:t.Bushi"><a><div><img src="img/l5r01072.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01077:Character:d.Dynasty::Honored General:t.Bushi:t.Commander"><a><div><img src="img/l5r01077.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01078:Character:d.Dynasty::Ikoma Eiji:t.Coutier"><a><div><img src="img/l5r01078.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01068:Character:d.Dynasty::Ikoma Prodigy:t.Courtier"><a><div><img src="img/l5r01068.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01074:Character:d.Dynasty::Kitsu Spiritcaller:t.Sugenja:t.Water"><a><div><img src="img/l5r01074.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01075:Character:d.Dynasty::Lion’s Pride Brawler:t.Bushi:t.Courtier"><a><div><img src="img/l5r01075.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01161:Character:d.Conflict::Master of the Spear:i.3:t.Bushi"><a><div><img src="img/l5r01161.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01076:Character:d.Dynasty::Matsu Beiona:t.Bushi"><a><div><img src="img/l5r01076.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01069:Character:d.Dynasty::Matsu Berserker:t.Bushi:t.Berserker"><a><div><img src="img/l5r01069.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01067:Character:d.Dynasty::Obstinate Recruit:t.Bushi"><a><div><img src="img/l5r01067.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01070:Character:d.Dynasty::Steadfast Samurai:t.Bushi"><a><div><img src="img/l5r01070.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01073:Character:d.Dynasty::Venerable Historian:t.Courtier:t.Scholar"><a><div><img src="img/l5r01073.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01160:Character:d.Conflict::Vengeful Oathkeeper:i.2:t.Bushi"><a><div><img src="img/l5r01160.jpg" class="cardimg"></div></a></li>
+
+
+<!--  Lion Clan Attachments  -->
+<li class="hidden Lionclan packcore" data-filtertext="l5r01162:Attachment:d.Conflict::Guidance of the Ancestors:i.1:t.Condition"><a><div><img src="img/l5r01162.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01163:Attachment:d.Conflict::Honored Blade:i.1:t.Weapon:k.Restricted"><a><div><img src="img/l5r01163.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01164:Attachment:d.Conflict::Sashimono:i.2:t.Item:t.Banner"><a><div><img src="img/l5r01164.jpg" class="cardimg"></div></a></li>
+
+<!--  Lion Clan Events  -->
+<li class="hidden Lionclan packcore" data-filtertext="l5r01168:Event:d.Conflict::For Greater Glory:i.3"><a><div><img src="img/l5r01168.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01165:Event:d.Conflict::Ready for Battle:i.1"><a><div><img src="img/l5r01165.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01166:Event:d.Conflict::Stand Your Ground:i.2"><a><div><img src="img/l5r01166.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01169:Event:d.Conflict::Strength in Numbers:i.2"><a><div><img src="img/l5r01169.jpg" class="cardimg"></div></a></li>
+<li class="hidden Lionclan packcore" data-filtertext="l5r01167:Event:d.Conflict::Way of the Lion:t.Philosophy"><a><div><img src="img/l5r01167.jpg" class="cardimg"></div></a></li>
+
+<!--  Lion Clan Strongholds  -->
+<li class="hidden Lionclan packcore" data-filtertext="l5r01004:d.Stronghold::Yojin no Shiro:t.Castle"><a><div><img src="img/l5r01004.jpg" class="cardimg"></div></a></li>
+
+<!--  Lion Clan Holdings  -->
+<li class="hidden Lionclan packcore" data-filtertext="l5r01080:Attachment:d.Dynasty::Staging Ground:t.Battlefield"><a><div><img src="img/l5r01080.jpg" class="cardimg"></div></a></li>
+
+<!--  Lion Clan Provinces  -->
+<li class="hidden Lionclan packcore" data-filtertext="l5r01011:d.Province::The Art of War:e.Water"><a><div><img src="img/l5r01011.jpg" class="cardimg"></div></a></li>
+
+<!--  Lion Clan Roles  -->
+
+
+<li data-role="list-divider" data-link="Phoenixclan"> <span class="ui-icon ui-icon-plus ui-icon-shadow listIcon">&nbsp;</span>Phoenix Clan</li>
+
+<!--    Phoenix Clan Characters    -->
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01084:Character:d.Dynasty::Adept of the Waves:t.Shugenja:t.Water"><a><div><img src="img/l5r01084.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01085:Character:d.Dynasty::Asako Diplomat:t.Courtier"><a><div><img src="img/l5r01085.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01091:Character:d.Dynasty::Fearsome Mystic:t.Shugenja:t.Air"><a><div><img src="img/l5r01091.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01092:Character:d.Dynasty::Isawa Atsuko:t.Shugenja:t.Void"><a><div><img src="img/l5r01092.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01090:Character:d.Dynasty::Isawa Masahiro:t.Shugenja:t.Fire"><a><div><img src="img/l5r01090.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01170:Character:d.Conflict::Ishiken Initiate:t.Shugenja:t.Void"><a><div><img src="img/l5r01170.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01086:Character:d.Dynasty::Meddling Mediator:t.Courtier"><a><div><img src="img/l5r01086.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01081:Character:d.Dynasty::Naive Student:t.Courtier:t.Scholar:k.Sincerity"><a><div><img src="img/l5r01081.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01087:Character:d.Dynasty::Radiant Orator:t.Courtier"><a><div><img src="img/l5r01087.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01171:Character:d.Conflict::Seeker of Knowledge:i.1:t.Courtier:t.Shugenja:t.Air"><a><div><img src="img/l5r01171.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01088:Character:d.Dynasty::Serene Warrior:t.Bushi"><a><div><img src="img/l5r01088.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01082:Character:d.Dynasty::Shiba Peacemaker:t.Bushi"><a><div><img src="img/l5r01082.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01093:Character:d.Dynasty::Shiba Tsukune:t.Bushi:t.Champion"><a><div><img src="img/l5r01093.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01089:Character:d.Dynasty::Shiba Yojimbo:t.Bushi:t.Yojimbo"><a><div><img src="img/l5r01089.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01083:Character:d.Dynasty::Solemn Scholar:t.Shugenja:t.Earth:t.Scholar"><a><div><img src="img/l5r01083.jpg" class="cardimg"></div></a></li>
+
+<!--  Phoenix Clan Attachments    -->
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01173:Attachment:d.Conflict::Grasp of Earth:i.1:t.Spell:t.Earth"><a><div><img src="img/l5r01173.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01172:Attachment:d.Conflict::Magnificent Kimono:i.1:t.Item"><a><div><img src="img/l5r01172.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01174:Attachment:d.Conflict::Pacifism:i.2:t.Condition"><a><div><img src="img/l5r01174.jpg" class="cardimg"></div></a></li>
+
+<!--  Phoenix Clan Events    -->
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01177:Event:d.Conflict::Against the Waves:i.1:t.Spell:t.Water"><a><div><img src="img/l5r01177.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01179:Event:d.Conflict::Display of Power:i.3:t.Spell:t.Fire"><a><div><img src="img/l5r01179.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01178:Event:d.Conflict::Know the World:i.3:t.Spell:t.Void"><a><div><img src="img/l5r01178.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01175:Event:d.Conflict::Supernatural Storm:i.1:t.Spell:t.Water"><a><div><img src="img/l5r01175.jpg" class="cardimg"></div></a></li>
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01176:Event:d.Conflict::Way of the Phoenix:t.Philosophy"><a><div><img src="img/l5r01176.jpg" class="cardimg"></div></a></li>
+
+<!--  Phoenix Clan Strongholds    -->
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01005:d.Stronghold::Isawa Mori Seido:t.Shrine"><a><div><img src="img/l5r01005.jpg" class="cardimg"></div></a></li>
+
+<!--  Phoenix Clan Holdings    -->
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01094:Attachment:d.Dynasty::Forgotten Library:t.Library:t.Shrine"><a><div><img src="img/l5r01094.jpg" class="cardimg"></div></a></li>
+
+<!--  Phoenix Clan Provinces    -->
+<li class="hidden Phoenixclan packcore" data-filtertext="l5r01012:d.Province::Kuroi Mori:e.Void"><a><div><img src="img/l5r01012.jpg" class="cardimg"></div></a></li>
+
+<!--  Phoenix Clan Roles    -->
+
+
+<li data-role="list-divider" data-link="Scorpionclan"> <span class="ui-icon ui-icon-plus ui-icon-shadow listIcon">&nbsp;</span>Scorpion Clan</li>
+
+<!--    Scorpion Clan Characters  -->
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01180:Character:d.Conflict::Adept of Shadows:i.3:t.Bushi:t.Shinobi"><a><div><img src="img/l5r01180.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01095:Character:d.Dynasty::Bayushi Liar:t.Courtier:k.Sincerity"><a><div><img src="img/l5r01095.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01096:Character:d.Dynasty::Bayushi Manipulator:t.Courtier"><a><div><img src="img/l5r01096.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01107:Character:d.Dynasty::Bayushi Shoju:t.Bushi:t.Courtier:t.Champion"><a><div><img src="img/l5r01107.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01105:Character:d.Dynasty::Bayushi Yunako:t.Bushi:t.Commander"><a><div><img src="img/l5r01105.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01098:Character:d.Dynasty::Blackmail Artist:t.Courtier"><a><div><img src="img/l5r01098.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01102:Character:d.Dynasty::Favored Niece:t.Courtier"><a><div><img src="img/l5r01102.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01103:Character:d.Dynasty::Shosuro Actress:t.Courtier:t.Shinobi"><a><div><img src="img/l5r01103.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01104:Character:d.Dynasty::Shosuro Miyako:t.Bushi:t.Shinobi"><a><div><img src="img/l5r01104.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01097:Character:d.Dynasty::Sinister Soshi:t.Shugenja:t.Air"><a><div><img src="img/l5r01097.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01099:Character:d.Dynasty::Soshi Illusionist:t.Shugenja:t.Air"><a><div><img src="img/l5r01099.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01181:Character:d.Conflict::Unassuming Yojimbo:i.2:t.Bushi:t.Yojimba:k.Covert"><a><div><img src="img/l5r01181.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01106:Character:d.Dynasty::Yogo Hiroue:t.Courtier"><a><div><img src="img/l5r01106.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01100:Character:d.Dynasty::Yogo Outcast:t.Shugenja:t.Air"><a><div><img src="img/l5r01100.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01101:Character:d.Dynasty::Young Rumormonger:t.Courtier"><a><div><img src="img/l5r01101.jpg" class="cardimg"></div></a></li>
+
+
+<!--  Scorpion Clan Attachments  -->
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01182:Attachment:d.Conflict::Court Mask:i.1:t.Item:t.Mask"><a><div><img src="img/l5r01182.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01183:Attachment:d.Conflict::Fiery Madness:i.2:t.Poison"><a><div><img src="img/l5r01183.jpg" class="cardimg"></div></a></li>
+
+<!--  Scorpion Clan Events  -->
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01188:Event:d.Conflict::Ambush:i.1"><a><div><img src="img/l5r01188.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01189:Event:d.Conflict::Blackmail:i.3"><a><div><img src="img/l5r01189.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01186:Event:d.Conflict::Calling in Favors:i.2"><a><div><img src="img/l5r01186.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01184:Event:d.Conflict::Forged Edict:i.2"><a><div><img src="img/l5r01184.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01187:Event:d.Conflict::I Can Swim:i.1:t.Philosophy"><a><div><img src="img/l5r01187.jpg" class="cardimg"></div></a></li>
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01185:Event:d.Conflict::Way of the Scorpion:t.Philosophy"><a><div><img src="img/l5r01185.jpg" class="cardimg"></div></a></li>
+
+<!--  Scorpion Clan Strongholds  -->
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01006:d.Stronghold::City of the Open Hand:t.City"><a><div><img src="img/l5r01006.jpg" class="cardimg"></div></a></li>
+
+<!--  Scorpion Clan Holdings  -->
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01108:Attachment:d.Dynasty::City of Lies:t.City"><a><div><img src="img/l5r01108.jpg" class="cardimg"></div></a></li>
+
+<!--  Scorpion Clan Provinces  -->
+<li class="hidden Scorpionclan packcore" data-filtertext="l5r01013:d.Province::Secret Cache:e.Air"><a><div><img src="img/l5r01013.jpg" class="cardimg"></div></a></li>
+
+<!--  Scorpion Clan Roles  -->
+
+
+<li data-role="list-divider" data-link="Unicornclan"> <span class="ui-icon ui-icon-plus ui-icon-shadow listIcon">&nbsp;</span>Unicorn Clan</li>
+
+<!--    Unicorn Clan Characters    -->
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01111:Character:d.Dynasty::Aggressive Moto:t.Bushi:t.Cavalry"><a><div><img src="img/l5r01111.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01112:Character:d.Dynasty::Border Rider:t.Bushi:t.Cavalry"><a><div><img src="img/l5r01112.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01115:Character:d.Dynasty::Giver of Gifts:t.Courtier"><a><div><img src="img/l5r01115.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01191:Character:d.Conflict::Ide Messenger:i.1:t.Courtier"><a><div><img src="img/l5r01191.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01116:Character:d.Dynasty::Ide Trader:t.Courtier"><a><div><img src="img/l5r01116.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01190:Character:d.Conflict::Iuchi Wayfinder:i.1:t.Shigenja:t.Water:t.Cavalry"><a><div><img src="img/l5r01190.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01113:Character:d.Dynasty::Meishodo Wielder:t.Shigenja:t.Water"><a><div><img src="img/l5r01113.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01119:Character:d.Dynasty::Moto Horde:t.Bushi:t.Army:t.Cavalry:k.No attachments except Weapon"><a><div><img src="img/l5r01119.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01109:Character:d.Dynasty::Moto Youth:t.Bushi:t.Cavalry"><a><div><img src="img/l5r01109.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01121:Character:d.Dynasty::Shinjo Altansarnai:t.Bushi:t.Cavalry:t.Champion"><a><div><img src="img/l5r01121.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01114:Character:d.Dynasty::Shinjo Outrider:t.Bushi:t.Cavalry:t.Scout"><a><div><img src="img/l5r01114.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01120:Character:d.Dynasty::Shinjo Tatsuo:t.Bushi:t.Cavalry:t.Scout"><a><div><img src="img/l5r01120.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01110:Character:d.Dynasty::Utaku Infantry:t.Bushi"><a><div><img src="img/l5r01110.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01118:Character:d.Dynasty::Utaku Yumino:t.Bushi:t.Battle Maiden:t.Cavalry"><a><div><img src="img/l5r01118.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01117:Character:d.Dynasty::Warrior Poet:t.Bushi:t.Cavalry"><a><div><img src="img/l5r01117.jpg" class="cardimg"></div></a></li>
+
+
+<!--  Unicorn Clan Attachments    -->
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01194:Attachment:d.Conflict::Born in War:i.1:t.Condition"><a><div><img src="img/l5r01194.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01192:Attachment:d.Conflict::Favored Mount:i.1:t.Creature"><a><div><img src="img/l5r01192.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01193:Attachment:d.Conflict::Spyglass:i.2:t.Item:t.Gaijin"><a><div><img src="img/l5r01193.jpg" class="cardimg"></div></a></li>
+
+<!--  Unicorn Clan Events    -->
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01195:Event:d.Conflict::Breakthrough:i.1"><a><div><img src="img/l5r01195.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01196:Event:d.Conflict::Captive Audience:i.3"><a><div><img src="img/l5r01196.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01199:Event:d.Conflict::Cavalry Reserves:i.2"><a><div><img src="img/l5r01199.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01197:Event:d.Conflict::I Am Ready:i.1"><a><div><img src="img/l5r01197.jpg" class="cardimg"></div></a></li>
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01198:Event:d.Conflict::Way of the Unicorn:t.Philosophy"><a><div><img src="img/l5r01198.jpg" class="cardimg"></div></a></li>
+
+<!--  Unicorn Clan Strongholds    -->
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01007:d.Stronghold::Golden Plains Outpost:t.Outpost"><a><div><img src="img/l5r01007.jpg" class="cardimg"></div></a></li>
+
+<!--  Unicorn Clan Holdings    -->
+
+<!--  Unicorn Clan Provinces    -->
+<li class="hidden Unicornclan packcore" data-filtertext="l5r01014:d.Province::Endless Plains:e.Water"><a><div><img src="img/l5r01014.jpg" class="cardimg"></div></a></li>
+
+<!--  Unicorn Clan Roles    -->
+
+
+<li data-role="list-divider" data-link="Neutralclan"> <span class="ui-icon ui-icon-plus ui-icon-shadow listIcon">&nbsp;</span>Neutral</li>
+
+						<!--    Neutral Characters  -->
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01124:Character:d.Dynasty::Keeper Initiate:t.Monk"><a><div><img src="img/l5r01124.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01125:Character:d.Dynasty::Miya Mystic:t.Shugenja:t.Earth:t.Imperial"><a><div><img src="img/l5r01125.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01122:Character:d.Dynasty::Otomo Courtier:t.Courtier:t.Imperial"><a><div><img src="img/l5r01122.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01126:Character:d.Dynasty::Seeker Initiate:t.Monk"><a><div><img src="img/l5r01126.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01123:Character:d.Dynasty::Seppun Guardsman:t.Bushi:t.Imperial"><a><div><img src="img/l5r01123.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01127:Character:d.Dynasty::Wandering Ronin:t.Bushi:t.Ronin"><a><div><img src="img/l5r01127.jpg" class="cardimg"></div></a></li>
+
+<!--  Neutral Attachments  -->
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01202:Attachment:d.Conflict::Cloud the Mind:t.Spell:t.Air"><a><div><img src="img/l5r01202.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01200:Attachment:d.Conflict::Fine Katana:t.Weapon:k.Restricted"><a><div><img src="img/l5r01200.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01201:Attachment:d.Conflict::Ornate Fan:t.Item:k.Restricted"><a><div><img src="img/l5r01201.jpg" class="cardimg"></div></a></li>
+
+<!--  Neutral Events  -->
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01203:Event:d.Conflict::Assassination"><a><div><img src="img/l5r01203.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01204:Event:d.Conflict::Banzai!"><a><div><img src="img/l5r01204.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01210:Event:d.Conflict::Charge!"><a><div><img src="img/l5r01210.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01205:Event:d.Conflict::Contingency Plan"><a><div><img src="img/l5r01205.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01206:Event:d.Conflict::Court Games"><a><div><img src="img/l5r01206.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01211:Event:d.Conflict::Fallen in Battle"><a><div><img src="img/l5r01211.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01207:Event:d.Conflict::For Shame!"><a><div><img src="img/l5r01207.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01208:Event:d.Conflict::Good Omen"><a><div><img src="img/l5r01208.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01212:Event:d.Conflict::Outwit"><a><div><img src="img/l5r01212.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01213:Event:d.Conflict::Rout"><a><div><img src="img/l5r01213.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01209:Event:d.Conflict::Spies at Court"><a><div><img src="img/l5r01209.jpg" class="cardimg"></div></a></li>
+
+<!--  Neutral Strongholds  -->
+
+<!--  Neutral Holdings  -->
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01128:Attachment:d.Dynasty::Favorable Ground:t.Battlefield"><a><div><img src="img/l5r01128.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01129:Attachment:d.Dynasty::Imperial Storehouse:t.Imperial"><a><div><img src="img/l5r01129.jpg" class="cardimg"></div></a></li>
+
+<!--  Neutral Provinces  -->
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01015:d.Province::Ancestral Lands:e.Earth"><a><div><img src="img/l5r01015.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01016:d.Province::Elemental Fury:e.Water"><a><div><img src="img/l5r01016.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01017:d.Province::Entrenched Position:e.Earth"><a><div><img src="img/l5r01017.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01018:d.Province::Fertile Fields:e.Air"><a><div><img src="img/l5r01018.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01019:d.Province::Manicured Garden:e.Air"><a><div><img src="img/l5r01019.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01020:d.Province::Meditations on the Tao:e.Fire"><a><div><img src="img/l5r01020.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01021:d.Province::Night Raid:e.Fire"><a><div><img src="img/l5r01021.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01022:d.Province::Pilgrimage:e.Void"><a><div><img src="img/l5r01022.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01023:d.Province::Rally to the Cause:e.Water"><a><div><img src="img/l5r01023.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01024:d.Province::Shameful Display:e.Void"><a><div><img src="img/l5r01024.jpg" class="cardimg"></div></a></li>
+
+<!--  Neutral Roles  -->
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01214a:d.Role::Keeper of Air:t.Keeper:t.Air"><a><div><img src="img/l5r01214a.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01215a:d.Role::Keeper of Earth:t.Keeper:t.Earth"><a><div><img src="img/l5r01215a.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01216a:d.Role::Keeper of Fire:t.Keeper:t.Fire"><a><div><img src="img/l5r01216a.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01218a:d.Role::Keeper of Void:t.Keeper:t.Void"><a><div><img src="img/l5r01218a.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01217a:d.Role::Keeper of Water:t.Keeper:t.Water"><a><div><img src="img/l5r01217a.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01214b:d.Role::Seeker of Air:t.Seeker:t.Air"><a><div><img src="img/l5r01214b.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01215b:d.Role::Seeker of Earth:t.Seeker:t.Earth"><a><div><img src="img/l5r01215b.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01216b:d.Role::Seeker of Fire:t.Seeker:t.Fire"><a><div><img src="img/l5r01216b.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01218b:d.Role::Seeker of Void:t.Seeker:t.Void"><a><div><img src="img/l5r01218b.jpg" class="cardimg"></div></a></li>
+<li class="hidden Neutralclan packcore" data-filtertext="l5r01217b:d.Role::Seeker of Water:t.Seeker:t.Water"><a><div><img src="img/l5r01217b.jpg" class="cardimg"></div></a></li>
+            
+			
+<li data-role="list-divider" data-link="Spoilers"> <span class="ui-icon ui-icon-plus ui-icon-shadow listIcon">&nbsp;</span> - Future Card Spoilers - </li>
+		
+<!-- SPOILERS -->
+<li class="hidden Spoilers Crabclan packtoa" data-filtertext=":l5r02004:Holding:d.Dynasty::Karada District:t.Imperial"><a><div><img src="img/l5r02004.jpg" class="cardimg"></div></a></li>
+<li class="hidden Spoilers Dragonclan packtoa" data-filtertext=":l5r02006:Character:d.Dynasty::Kitsuki Yaruma:t.Courtier"><a><div><img src="img/l5r02006.jpg" class="cardimg"></div></a></li>
+<li class="hidden Spoilers Phoenixclan packtoa" data-filtertext=":l5r02009:Character:d.Dynasty::Isawa Kaede:t.Sugenja:t.Void"><a><div><img src="img/l5r02009.jpg" class="cardimg"></div></a></li>
+<li class="hidden Spoilers Unicornclan packtoa" data-filtertext=":l5r02010:Character:d.Dynasty::Swift Magistrate:t.Bushi:t.Imperial:t.Magistrate"><a><div><img src="img/l5r02010.jpg" class="cardimg"></div></a></li>
+<li class="hidden Spoilers Craneclan packtoa" data-filtertext=":l5r02013:Event:d.Conflict::Disdainful Remark:i.1"><a><div><img src="img/l5r02013.jpg" class="cardimg"></div></a></li>
+<li class="hidden Spoilers Lionclan packtoa" data-filtertext=":l5r02015:Event:d.Conflict::Time for War:i.1"><a><div><img src="img/l5r02015.jpg" class="cardimg"></div></a></li>
+<li class="hidden Spoilers Scorpionclan packtoa" data-filtertext=":l5r02018:Event:d.Conflict::Smoke and Mirrors:i.2:t.Technique"><a><div><img src="img/l5r02018.jpg" class="cardimg"></div></a></li>
+
+			
+            
+        </ul>                               
+  <!--  </div>
+    <div data-role="fieldcontain">       
+       <input type="button" value="Clear" id="clear-filter"/>
+    </div>
+</div> -->
+ 
+   
+	<p>
+<div data-role="collapsible">
+    <h4><div id="expansionsmenu">See all Expansions & Spoilers</div></h4>
+   <ul data-role="listview">
+<li> <a><div id="linkallcards">&nbsp;&nbsp;&nbsp;All Cards</div></a></li>
+<li> <a><div id="linkcore">&nbsp;&nbsp;&nbsp;Core Set <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- released October 2017</p></div></a></li>
+<li> <a><div id="linktoa">&nbsp;&nbsp;&nbsp;Tears of Amaterasu <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Not yet released</p></div></a></li>
+    </ul>
+</div>
+
+<p>
+	
+<ul data-role="listview" data-icon="false" data-inset="true" data-divider-theme="c">
+<li data-role="list-divider" data-link="Keywords">Keywords</li>
+<li class="hidden Keywords"><a></a><p><b>&nbsp;&nbsp;&nbsp;Ancestral</b> is a keyword ability that appears on attachments. If the card or game element to which an ancestral attachment is attached leaves play, the ancestral attachment is returned to its owner’s hand instead of being discarded.</li>
+<li class="hidden Keywords"><a></a><p><b>&nbsp;&nbsp;&nbsp;Courtesy</b> is a keyword ability. When a card with the courtesy keyword leaves play, its controller gains 1 fate.</li>
+<li class="hidden Keywords"><a></a><p><b>&nbsp;&nbsp;&nbsp;Covert</b> is a keyword ability. When a player initiates a conflict, for each character with the covert keyword he or she declares as an attacker, that player may choose one character without covert controlled by the defending player. Each chosen character is considered evaded by covert, and cannot be declared as a defender for that conflict.
+<br>Card abilities may be used to move characters that have been evaded by covert into a conflict as defenders.
+<br>Covert may only be used when characters are declared as attackers. If a character with covert is moved into or played into a conflict after the point at which the conflict was declared, that character’s covert ability does not resolve.</li>
+<li class="hidden Keywords"><a></a><p><b>&nbsp;&nbsp;&nbsp;Limited</b> is a keyword ability. No more than one card in total with the limited keyword can be played by each player each round.
+<br>Cards played from hand and played from a player’s provinces are restricted by and count toward this limit.
+<br>Limited cards that are "put into play" via card abilities ignore and are ignored by this restriction.</li>
+<li class="hidden Keywords"><a></a><p><b>&nbsp;&nbsp;&nbsp;No attachments</b> is a keyword ability. A card with this keyword cannot have an attachment card attached.
+<br>If one or more traits precedes the word “attachments” (for example, "No Weapon or Armor attachments"), the card cannot have an attachment that possess one or more of the specified traits, but it can have attachments possessing none of those traits.
+<br>If the word "attachments" is followed by the word “except” and one or more traits (for example, "No attachments except Weapon"), the card can have attachments that possess one or more of the specified traits, but it cannot have attachments possessing none of those traits.
+<br>If a card has multiple variants of the “No attachments” keyword, any variant that would prevent a card from having a given attachment prevails.</li>
+<li class="hidden Keywords"><a></a><p><b>&nbsp;&nbsp;&nbsp;Pride</b> is a keyword ability. After a character with the pride keyword wins a conflict, honor that character. After a character with the pride keyword loses a conflict, dishonor that character.</li>
+<li class="hidden Keywords"><a></a><p><b>&nbsp;&nbsp;&nbsp;Restricted</b> is a keyword ability. A character may not have more than two attachments with the restricted keyword attached to it at any time.
+<br>If at any time a character has three or more restricted attachments, that character’s controller must immediately choose and discard one of the restricted attachments on the character as soon as the illegal game state occurs.</li>
+<li class="hidden Keywords"><a></a><p><b>&nbsp;&nbsp;&nbsp;Sincerity</b> is a keyword ability. When a card with the sincerity keyword leaves play, its controller draws 1 card.</li>
+
+<li data-role="list-divider" data-link="Advsearch">Advanced Search Techniques</li>
+<li class="hidden Advsearch"><a></a><p>You can search for <b>"character', "event", "attachment", "holding", "province", "stronghold" or "role". Card numbers, names, clans, decks, traits, keywords, elements, packs, and influence costs.</b></p>
+	<br><p>The search will return all instances of the search term.  Which means that the more you type, the more refined the search will be. But also that you usually only need to type the first few letters of your search to get relevent results.</p>
+	<br><p>For advanced searches, add the following characters before your search term.</p>
+	<br><p><b>"d."</b> to search for <b>deck types</b>.  Example "d.conflict", or just "d.c". Options are Conflict, Dynasty, Province, Role, Stronghold.</p>
+	<br><p><b>"e."</b> to search for <b>element types</b>.  Example "e.void", or just "e.v". Options are Air, Earth, Fire, Void, Water.</p>
+	<br><p><b>"i."</b> will search for all cards who can be bought with <b>influence</b>, or "i'3", will search for cards with an influence cost of 3.</p>
+	<br><p><b>"k."</b> to search for <b>keywords</b>.  Example "k.covert". Or just type "k." for a full list of characters with keywords.</p>
+	<br><p><b>"t."</b> to search for <b>traits</b>.  Example "t.bushi".</p></li>
+	
+<li data-role="list-divider" data-link="About">about this app</li>
+<li class="hidden About"><a></a><p>The information presented in this app about Legend of the Five Rings the Living Card Game, both literal and graphical, is copyrighted by Fantasy Flight Games. This app is not produced, endorsed, supported, or affiliated with Fantasy Flight Games.</p>
+<br><p>The information, text and images displayed in this app were collected from a variety of sources across the internet.</p>
+<p>Special mentions go to the amazing <font color="##1F618D">fiveringsdb.com</font> who generously allowed me to use their fonts for the clan icons. <font color="##1F618D">Cardgamedb.com</font>, the <font color="##1F618D">L5R subreddit & Facebook groups</font>, and of course to <font color="##1F618D">FFG themselves</font>.</p>
+<br><p>If you like this app, and you play the Game of Thrones LCG, check out <font color="##1F618D"><b>A Deck of Thrones</b></font>, on Android & IOS.</p>
+<br><p>Special thanks to my beta testers: Ninefingers, mcphee, Mudskipper, Kat, Skippy, Pumpkin & Butterbeer.</p></li>
+
+	</ul>
+	
 </div></div>
-<div data-role="footer" class="ui-bar" data-type="horizontal">
+
+
+
+
+<div data-role="footer" data-position="fixed" data-type="horizontal" class="footerexpand" data-tap-toggle="false">
+		<div class="ui-grid-a ui-mini">
+  <div class="ui-block-a"><a id="btnExpand" class="ui-btn ui-corner-all collapseExpand">Expand All</a></div>
+  <div class="ui-block-b"><a id="btnCollapse" class="ui-btn ui-corner-all collapseExpand">Collapse All</a></div>
 </div></div>
 
+</div>
 
-
-<!--                     CLAN MENUS                    -->
-<div id="menucrab" data-role="page" data-prev="#page1" data-next="#menucrane"></div>
-<div id="menucrane" data-role="page" data-prev="#menucrab" data-next="#menudragon"></div>
-<div id="menudragon" data-role="page" data-prev="#menucrane" data-next="#menulion"></div>
-<div id="menulion" data-role="page" data-prev="#menudragon" data-next="#menuphoenix"></div>
-<div id="menuphoenix" data-role="page" data-prev="#menulion" data-next="#menuscorpion"></div>
-<div id="menuscorpion" data-role="page" data-prev="#menuphoenix" data-next="#menuunicorn"></div>
-<div id="menuunicorn" data-role="page" data-prev="#menuscorpion" data-next="#menuneutral"></div>
-<div id="menuneutral" data-role="page" data-prev="#menuunicorn" data-next=""></div>
-
-
-<!--                     KEYWORDS                     -->
-<div id="librarykeywords" data-role="page" data-prev="" data-next=""></div>
-
-<!--                     ABOUT                     -->
-<div id="libraryabout" data-role="page" data-prev="" data-next=""></div>
-
-
-<!--                     EXPANSIONS MENU                     -->
-<div id="menuexpansions" data-role="page" data-prev="" data-next="#menucore"></div>
-
-<div id="menucore" data-role="page" data-prev="#menuexpansions" data-next="#menuTOA"></div>
-<div id="menuTOA" data-role="page" data-prev="#menucore" data-next=""></div>
-
-
-
+<!-- Other pages -->
+</div>
 
 <!--                     MELEE DECK                     -->
 
 
 
-
-
-<div data-role="popup" id="floatnavpopup" data-history="false"  data-theme="a">
-<ul data-role="listview" data-icon="false">
-<li data-role="list-divider"><b>a Deck of Five Rings</b></li>
-<li><a href="#page1">Home</a></li>
-<li><a href="#librarykeywords">Keywords</a></li>
-<li><a href="#menuexpansions">Expansions & Spoilers</a></li>
-<li data-role="list-divider"><b>Clans of Rokugan</b></li>
-<div data-role="controlgroup" data-type="horizontal"><a href="#menucrab" data-role="button">&#160;<span class="icon-clan-crab"></span>&#160;</a><a href="#menucrane" data-role="button">&#160;<span class="icon-clan-crane"></span>&#160;</a><a href="#menudragon" data-role="button">&#160;<span class="icon-clan-dragon"></span>&#160;</a><a href="#menulion" data-role="button">&#160;<span class="icon-clan-lion"></span>&#160;</a></div>
-<div data-role="controlgroup" data-type="horizontal"><a href="#menuphoenix" data-role="button">&#160;<span class="icon-clan-phoenix"></span>&#160;</a><a href="#menuscorpion" data-role="button">&#160;<span class="icon-clan-scorpion"></span>&#160;</a><a href="#menuunicorn" data-role="button">&#160;<span class="icon-clan-unicorn"></span>&#160;</a><a href="#menuneutral" data-role="button">&#160;<span class="icon-element-water"></span>&#160;</a></div>
-<div data-role="controlgroup"><a href="#" data-rel="back" data-role="button" datatheme="e" data-icon="delete" data-iconpos="notext" class="ui_btn-right">Close</a></div><</div>
-
-
-
-</body>
+<link rel="stylesheet" href="css/jquerymobile.css" type="text/css"></link>
+<link rel="stylesheet" href="css/deck.css" type="text/css"></link>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquerymobile.js" type="text/javascript"></script>
 <script src="js/jqueryswipe.js" type="text/javascript"></script>
 
+</body>
 </html>

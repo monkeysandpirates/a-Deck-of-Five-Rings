@@ -1,130 +1,108 @@
-function navnext( next ) {
-    $( ":mobile-pagecontainer" ).pagecontainer( "change", next, {
-        transition: "none"
+  // hide and show on search
+    $(function(){
+      $('[data-role="list-divider"]').toggle(function(){
+        $('.'+$(this).attr('data-link')).addClass('show');
+        $(this).children().removeClass('ui-icon-plus').addClass('ui-icon-minus');
+        
+      },function(){
+        $('.'+$(this).attr('data-link')).removeClass('show');
+        $(this).children().removeClass('ui-icon-minus').addClass('ui-icon-plus');
+      });
     });
-}
-function navprev( prev ) {
-    $( ":mobile-pagecontainer" ).pagecontainer( "change", prev, {
-        transition: "none",
-        reverse: true
-    });
-}
+    
+	// expand collapse buttons
+  $(document).on("click", ".collapseExpand", function () {
+    var collapseAll = this.id == "btnCollapse";
+    if (collapseAll) {
+        $(".ui-li-divider .ui-icon-minus").click();
+		    $(".hidden").removeClass('show');
+			jQuery.mobile.silentScroll( '0' );
+    } else {
+        $(".ui-li-divider .ui-icon-plus").click();
+			jQuery.mobile.silentScroll( '0' );
+    }
+});
+		    
+	// expansions menu header functions
+	$(document).bind('pageinit', function() {
+    $('#expansionsmenu').click(function() {
+ 	$(".hidden").removeClass('show');
+    $('input[data-type="search"]').val('');
+    $('input[data-type="search"]').trigger("keyup");
+	$(".ui-li-divider .ui-icon-minus").click();
+      });
+}); 
 
-$.event.special.swipe.scrollSupressionThreshold = 10; // More than this horizontal displacement, and we will suppress scrolling.
-$.event.special.swipe.horizontalDistanceThreshold = 30; // Swipe horizontal displacement must be more than this.
-$.event.special.swipe.durationThreshold = 500;  // More time than this, and it isn't a swipe.
-$.event.special.swipe.verticalDistanceThreshold = 75; // Swipe vertical displacement must be less than this.
 
-// load html menus into divs
-$("div[id^=menu]").each(function() {
-    var match = this.id.match(/\w+$/)[0];
-    $(this).load('menus/' + match + '.html');
+// collapse and hide on search X cancel
+$(document).on('click', '.ui-input-clear', function () {
+	   var collapseAll = this.id == "btnCollapse";
+        $(".ui-li-divider .ui-icon-minus").click();
+		    $(".hidden").removeClass('show');
+//     $("#expansionsmenu").click();
+});
+    
+// collapse and hide on searchbar select cancel
+$(document).on('click', '.ui-input-text', function () {
+	   var collapseAll = this.id == "btnCollapse";
+        $(".ui-li-divider .ui-icon-minus").click();
+		    $(".hidden").removeClass('show');
+//     $("#expansionsmenu").click();
 });
 
-$("div[id^=library]").each(function() {
-    var match = this.id.match(/\w+$/)[0];
-    $(this).load('library/' + match + '.html');
+// hide page until loaded
+$(document).ready(function() {
+    $('#fadewrap').fadeIn();
 });
+	
+	
+// the clear button script
+//$(document).on('click', '#clear-filter', function(){       
+//    $('input[data-type="search"]').val('');
+//    $('input[data-type="search"]').trigger("keyup");
+//});
 
-// load the card data into the front page search - hidden. Last one needs the extra lines.
-$.get('menus/data-crab.html',function(data) {
-   $('#search-all').append( data );  
-});
-
-$.get('menus/data-crane.html',function(data) {
-   $('#search-all').append( data );
-});
-
-$.get('menus/data-dragon.html',function(data) {
-   $('#search-all').append( data );
-});
-
-$.get('menus/data-lion.html',function(data) {
-   $('#search-all').append( data );
-});
-
-$.get('menus/data-phoenix.html',function(data) {
-   $('#search-all').append( data ); 
-});
-
-$.get('menus/data-scorpion.html',function(data) {
-   $('#search-all').append( data );
-});
-
-$.get('menus/data-unicorn.html',function(data) {
-   $('#search-all').append( data );
-});
-
-$.get('menus/data-neutral.html',function(data) {
-   $('#search-all').append( data );
-   $( "ul#search-all li" ).addClass( "ui-screen-hidden" );
-//   $( "ul#search-all li" ).addClass( "ui-li-static" );
-   $( "ul#search-all li" ).not(".dontchange").addClass( "ui-body-inherit" );   
-});
-
-
-// load the card data into the clan pages - not hidden
-$.get('menus/data-crab.html',function(data) {
-   $('#search-crab').append( data ); 
-});
-
-$.get('menus/data-crane.html',function(data) {
-   $('#search-crane').append( data ); 
-});
-
-$.get('menus/data-dragon.html',function(data) {
-   $('#search-dragon').append( data ); 
-});
-
-$.get('menus/data-lion.html',function(data) {
-   $('#search-lion').append( data ); 
-});
-
-$.get('menus/data-phoenix.html',function(data) {
-   $('#search-phoenix').append( data ); 
-});
-
-$.get('menus/data-scorpion.html',function(data) {
-   $('#search-scorpion').append( data ); 
-});
-
-$.get('menus/data-unicorn.html',function(data) {
-   $('#search-unicorn').append( data ); 
-});
-
-$.get('menus/data-neutral.html',function(data) {
-   $('#search-neutral').append( data ); 
-});
-
-
-
-
-// start of the script to allow popups across pages
-
-// Instantiate the popup on DOMReady, and enhance its contents
-$( function() {
-    $( "#floatnavpopup" ).enhanceWithin().popup();
-});
-
-// end of the script to allow popups across pages
-
-
-$( document ).one( "pagecreate", "#page1", function() {
-    // Handler for navigating to the next page
-    // Navigate to the next page on swipeleft
-    $( document ).on( "swipeleft", ".ui-page", function( event ) {
-        // Get the filename of the next page. We stored that in the data-next
-        // attribute in the original markup.
-        var next = $( this ).jqmData( "next" );
-        if ( next ) {
-            navnext( next );
-        }
-    });
-    // The same for the navigating to the previous page
-    $( document ).on( "swiperight", ".ui-page", function( event ) {
-        var prev = $( this ).jqmData( "prev" );
-        if (prev) {
-            navprev( prev );
-        }
-    });
-});
+// All Cards menu functions
+	$(document).bind('pageinit', function() {
+// When link is clicked
+  $('#linkallcards').click(function() {
+// collapse the expansions menu
+     $("#expansionsmenu").click();
+	$(".hidden").addClass('show');
+// clear the search, and trigger a blank search
+   $('input[data-type="search"]').val('');
+    $('input[data-type="search"]').trigger("keyup");
+	});
+ 
+}); 
+	
+// Core Set menu functions
+	$(document).bind('pageinit', function() {
+// When link is clicked
+  $('#linkcore').click(function() {
+// collapse the expansions menu
+     $("#expansionsmenu").click();
+	$(".hidden").removeClass('show');
+	$(".packcore").addClass('show');
+// clear the search, and trigger a blank search
+   $('input[data-type="search"]').val('');
+    $('input[data-type="search"]').trigger("keyup");
+	});
+ 
+}); 
+		    
+// Tears of Ameratsu menu functions
+	$(document).bind('pageinit', function() {
+// When link is clicked
+  $('#linktoa').click(function() {
+// collapse the expansions menu
+     $("#expansionsmenu").click();
+// hide everything except this expansion
+	$(".hidden").removeClass('show');
+	$(".packtoa").addClass('show');
+// clear the search, and trigger a blank search
+   $('input[data-type="search"]').val('');
+    $('input[data-type="search"]').trigger("keyup");
+	});
+ 
+}); 

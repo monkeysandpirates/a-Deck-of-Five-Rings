@@ -106,3 +106,79 @@ $(document).ready(function() {
 	});
  
 }); 
+
+// For Honor and Glory menu functions
+	$(document).bind('pageinit', function() {
+// When link is clicked
+  $('#linkfhag').click(function() {
+// collapse the expansions menu
+     $("#expansionsmenu").click();
+// hide everything except this expansion
+	$(".hidden").removeClass('show');
+	$(".packfhag").addClass('show');
+// clear the search, and trigger a blank search
+   $('input[data-type="search"]').val('');
+    $('input[data-type="search"]').trigger("keyup");
+	});
+ 
+}); 
+// Into the Forbidden City menu functions
+	$(document).bind('pageinit', function() {
+// When link is clicked
+  $('#linkitfc').click(function() {
+// collapse the expansions menu
+     $("#expansionsmenu").click();
+// hide everything except this expansion
+	$(".hidden").removeClass('show');
+	$(".packitfc").addClass('show');
+// clear the search, and trigger a blank search
+   $('input[data-type="search"]').val('');
+    $('input[data-type="search"]').trigger("keyup");
+	});
+ 
+}); 
+// The Chrysanthemum Throne menu functions
+	$(document).bind('pageinit', function() {
+// When link is clicked
+  $('#linktct').click(function() {
+// collapse the expansions menu
+     $("#expansionsmenu").click();
+// hide everything except this expansion
+	$(".hidden").removeClass('show');
+	$(".packtct").addClass('show');
+// clear the search, and trigger a blank search
+   $('input[data-type="search"]').val('');
+    $('input[data-type="search"]').trigger("keyup");
+	});
+ 
+}); 
+// Fate has no Secrets menu functions
+	$(document).bind('pageinit', function() {
+// When link is clicked
+  $('#linkfhns').click(function() {
+// collapse the expansions menu
+     $("#expansionsmenu").click();
+// hide everything except this expansion
+	$(".hidden").removeClass('show');
+	$(".packfhns").addClass('show');
+// clear the search, and trigger a blank search
+   $('input[data-type="search"]').val('');
+    $('input[data-type="search"]').trigger("keyup");
+	});
+ 
+}); 
+// Meditations on the Ephemeral menu functions
+	$(document).bind('pageinit', function() {
+// When link is clicked
+  $('#linkmote').click(function() {
+// collapse the expansions menu
+     $("#expansionsmenu").click();
+// hide everything except this expansion
+	$(".hidden").removeClass('show');
+	$(".packmote").addClass('show');
+// clear the search, and trigger a blank search
+   $('input[data-type="search"]').val('');
+    $('input[data-type="search"]').trigger("keyup");
+	});
+ 
+}); 

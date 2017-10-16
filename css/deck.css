@@ -1,0 +1,173 @@
+body{
+background-color:white;
+ }
+
+.title {
+background-color:#1F618D;
+width:100%;
+    height:60px;
+    padding:0px;
+    margin:0px;
+    z-index:1;
+    position:fixed;
+    top:0px;
+    left:0px;
+ }
+ 
+ .titlescroll {
+background-color:#3388cc;
+width:100%;
+    height:60px;
+    padding:0px;
+    margin:0px;
+    z-index:1;
+    position:absolute;
+    top:0px;
+    left:0px;
+ }
+ 
+ 
+ 
+.wrapper {
+    margin-top:75px;
+    position:relative;
+ }
+
+
+/   
+.link  {
+text-decoration: none;
+padding: 5px;
+display: block;
+  }
+  
+  .line {
+padding: 0;
+margin: 0;
+   }
+   
+h2 {
+color: #1F618D;
+font-size: 130%;
+ }
+
+h1 {
+color: white;
+font-size: 190%;
+text-align: center;
+ }
+ 
+ a:link {
+ color: black !important;
+ font-weight:normal !important;
+ text-decoration: none !important;
+  }
+ 
+ a:visited{
+ color: black !important;
+ font-weight:normal !important;
+ text-decoration: none !important;
+  }
+  
+  a:active{
+  color: grey !important;
+ font-weight:normal !important;
+ text-decoration: none !important;
+   }
+   
+   
+ .cardimg {
+width:375px;
+max-width:100%;
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ 
+ .secondary{
+ font-size:x-small;
+ color:#1F618D;
+  }
+  
+  .expansion {
+  float:right; }
+ 
+  .fiveringsdb {
+    float:right;
+ font-size:large;  }
+ 
+   .faq{
+ font-size:smaller;
+ color:#1F618D;
+  }
+
+   
+   .hidden{
+      display:none;
+    }
+    .show{
+      display:block;
+    }
+    .listIcon{
+      float:right
+    }
+	
+.library p {
+	padding: 25px;
+}
+ 
+div#fadewrap { display: none; }  
+
+  /* Override JQM CSS for padding of li's =======*/
+.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
+padding: .7em 2px .7em 2px;
+background-color: white;
+}
+
+
+  
+@font-face {
+  font-family: 'fiveringsdb';
+  src:  url('fiveringsdb.eot?yn5wqh');
+  src:  url('fiveringsdb.eot?yn5wqh#iefix') format('embedded-opentype'),
+    url('fiveringsdb.ttf?yn5wqh') format('truetype'),
+    url('fiveringsdb.woff?yn5wqh') format('woff'),
+    url('fiveringsdb.svg?yn5wqh#fiveringsdb') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fiveringsdb' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.icon-conflict-military:before {content: "\e900";}
+.icon-conflict-political:before {content: "\e901";}
+
+.icon-element-air:before {content: "\e902";}
+.icon-element-earth:before {content: "\e903";}
+.icon-element-fire:before {content: "\e904";}
+.icon-element-void:before {content: "\e905";}
+.icon-element-water:before {content: "\e906";}
+
+.icon-clan-crab:before {content: "\e907";}
+.icon-clan-crane:before {content: "\e908";}
+.icon-clan-dragon:before {content: "\e909";}
+.icon-clan-lion:before {content: "\e90a";}
+.icon-clan-phoenix:before {content: "\e90b";}
+.icon-clan-scorpion:before {content: "\e90c";}
+.icon-clan-unicorn:before {content: "\e90d";}

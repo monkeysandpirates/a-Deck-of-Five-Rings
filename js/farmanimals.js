@@ -107,3 +107,10 @@ $(document).ready(function() {
 	$.mobile.silentScroll(440);
 });
 });
+
+		    
+	// expansions menu header functions
+  $(document).on("click", "#hideshowrulings", function () {
+ 	$(".rulings").toggleClass('hiderulings');
+      });
+	 

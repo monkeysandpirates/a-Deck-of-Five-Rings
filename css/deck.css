@@ -113,6 +113,15 @@ display: block;
       float:right
     }
 	
+	  .hiderulings{
+      display:none;
+    }
+		
+	  .rulings{
+      white-space:normal;
+	  font-size:small;
+    }
+	
 .library p {
 	padding: 25px;
 }

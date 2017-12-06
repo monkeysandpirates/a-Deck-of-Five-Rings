@@ -117,7 +117,8 @@ display: block;
       display:none;
     }
 		
-	  .rulings{
+	  .rulings p {
+	padding: 25px;
       white-space:normal;
 	  font-size:small;
     }

@@ -117,10 +117,16 @@ display: block;
       display:none;
     }
 		
+	.rulings {
+		outline:2px solid black;
+	}
+	
 	  .rulings p {
-	padding: 25px;
+	padding: 10px;
       white-space:normal;
 	  font-size:small;
+	  background-color:white;
+		outline:2px solid black;
     }
 	
 .library p {

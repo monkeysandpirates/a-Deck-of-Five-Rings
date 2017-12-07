@@ -126,7 +126,8 @@ display: block;
       white-space:normal;
 	  font-size:small;
 	  background-color:white;
-		outline:2px solid black;
+	  border-radius: 15px;
+		border:1px solid #C0C0C0;
     }
 	
 .library p {

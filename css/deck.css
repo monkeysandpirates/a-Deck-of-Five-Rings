@@ -40,17 +40,9 @@ width:100%;
     position:absolute;
     top:0px;
     left:0px;
-	 /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'brush-tiptexbrushtiptexetrial' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
  }
  
-  .mainmenu {
+  .fontbrush {
 	 /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'brush-tiptexbrushtiptexetrial' !important;
   font-size:1.3em !important;

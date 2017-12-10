@@ -71,6 +71,10 @@ padding: 0;
 margin: 0;
    }
    
+h1 {
+	font-weight:100;
+}
+   
 h2 {
 color: #1F618D;
 font-size: 130%;
@@ -114,6 +118,7 @@ display: block;
 font-family: Helvetica, Arial, sans-serif !important /*{global-font-family}*/;
  font-size:x-small;
  color:#1F618D;
+ z-index:+2;
   }
   
   .expansion {

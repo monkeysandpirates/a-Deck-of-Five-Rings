@@ -3,7 +3,6 @@
     font-family: 'brush-tiptexbrushtiptexetrial';
     src: url('brush_tip_texe-webfont.eot');
     src: url('brush_tip_texe-webfont.eot?#iefix') format('embedded-opentype'),
-         url('brush_tip_texe-webfont.woff2') format('woff2'),
          url('brush_tip_texe-webfont.woff') format('woff'),
          url('brush_tip_texe-webfont.ttf') format('truetype'),
          url('brush_tip_texe-webfont.svg#brush-tiptexbrushtiptexetrial') format('svg');
@@ -112,6 +111,7 @@ display: block;
  
  
  .secondary{
+font-family: Helvetica, Arial, sans-serif !important /*{global-font-family}*/;
  font-size:x-small;
  color:#1F618D;
   }

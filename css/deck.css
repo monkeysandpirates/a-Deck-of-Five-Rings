@@ -168,13 +168,14 @@ font-family: Helvetica, Arial, sans-serif !important /*{global-font-family}*/;
 	  background-color:white;
 		border:1px solid #C0C0C0;
 }
-
+	
 .actionwindow p {
+	background-color: #ffe6e6;
 		border:2px solid red !important;
 }
 
 .phase p {
-	background-color: #C0C0C0;
+	background-color: #FAF0E6;
 		border:3px solid #C0C0C0 !important;
 	 /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'brush-tiptexbrushtiptexetrial' !important;

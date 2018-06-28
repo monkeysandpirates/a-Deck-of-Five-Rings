@@ -1,8 +1,10 @@
+// IMPORTANT NOTE .pump-kin was .ui-icon-plus  .butter-beer was ui-icon-minus
+ 
  // hide and show on search
     $(function(){
       $('[data-role="list-divider"]').toggle(function(){
         $('.'+$(this).attr('data-link')).addClass('show');
-        $(this).children().removeClass('ui-icon-plus').addClass('ui-icon-minus');
+        $(this).children().removeClass('pump-kin').addClass('butter-beer');
 $(".lazy.show").each(function(idx){    
     var $img = $(this).find("img");
     var src = $img.data("src");
@@ -12,7 +14,7 @@ $(".lazy.show").each(function(idx){
 
       },function(){
         $('.'+$(this).attr('data-link')).removeClass('show');
-        $(this).children().removeClass('ui-icon-minus').addClass('ui-icon-plus');
+        $(this).children().removeClass('butter-beer').addClass('pump-kin');
       });
     });
     
@@ -20,11 +22,11 @@ $(".lazy.show").each(function(idx){
   $(document).on("click", ".collapseExpand", function () {
     var collapseAll = this.id == "btnCollapse";
     if (collapseAll) {
-        $(".ui-li-divider .ui-icon-minus").click();
+        $(".ui-li-divider .butter-beer").click();
 		$(".hidden").removeClass('show');
 		jQuery.mobile.silentScroll( '0' );
     } else {
-        $(".ui-li-divider .ui-icon-plus").click();
+        $(".ui-li-divider .pump-kin").click();
 		jQuery.mobile.silentScroll( '0' );
     }
 });
@@ -34,13 +36,13 @@ $(".lazy.show").each(function(idx){
  	$(".hidden").removeClass('show');
     $('input[data-type="search"]').val('');
     $('input[data-type="search"]').trigger("keyup");
-	$(".ui-li-divider .ui-icon-minus").click();
+	$(".ui-li-divider .butter-beer").click();
       });
 
 // collapse and hide on search X cancel
 $(document).on('click', '.ui-input-clear', function () {
 	   var collapseAll = this.id == "btnCollapse";
-        $(".ui-li-divider .ui-icon-minus").click();
+        $(".ui-li-divider .butter-beer").click();
 		    $(".hidden").removeClass('show');
 //     $("#expansionsmenu").click();
 });
@@ -48,7 +50,7 @@ $(document).on('click', '.ui-input-clear', function () {
 // collapse and hide on searchbar select cancel
 $(document).on('click', '.ui-input-text', function () {
 	   var collapseAll = this.id == "btnCollapse";
-        $(".ui-li-divider .ui-icon-minus").click();
+        $(".ui-li-divider .butter-beer").click();
 		    $(".hidden").removeClass('show');
 //     $("#expansionsmenu").click();
 });
@@ -113,4 +115,5 @@ $(document).ready(function() {
   $(document).on("click", "#hideshowrulings", function () {
  	$(".rulings").toggleClass('hiderulings');
       });
+	 
 	 

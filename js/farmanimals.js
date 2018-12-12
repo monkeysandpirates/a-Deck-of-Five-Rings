@@ -118,3 +118,19 @@ $(document).ready(function() {
 	 
 	// external link test
 //window.open("http://google.com", "-system");
+
+// more external link test
+	$(document).bind('pageinit', function() {
+// When link is clicked
+	$("div[id=test1]").click(function() {
+	window.open("http://google.com", "_system");
+// When link is clicked
+	$("div[id=test2]").click(function() {
+	cordova.InAppBrowser.open("http://google.com", "_system");
+// When link is clicked
+	$("div[id=test3]").click(function() {
+	cordova.InAppBrowser.open("http://google.com", "_blank", "location=yes");
+});
+});
+});
+});

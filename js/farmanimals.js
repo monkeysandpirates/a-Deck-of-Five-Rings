@@ -117,4 +117,4 @@ $(document).ready(function() {
       });
 	 
 	// external link test
-window.open("http://google.com", "-system");
+//window.open("http://google.com", "-system");

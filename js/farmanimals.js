@@ -116,4 +116,5 @@ $(document).ready(function() {
  	$(".rulings").toggleClass('hiderulings');
       });
 	 
-	 
+	// external link test
+window.open("http://google.com", "-system");

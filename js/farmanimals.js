@@ -120,14 +120,14 @@ $(document).ready(function() {
 //window.open("http://google.com", "-system");
 
 // more external link test
-	$(document).bind('pageinit', function() {
+//	$(document).bind('pageinit', function() {
 // When link is clicked
-	$("div[id=test1]").click(function() {
-	window.open("http://google.com", "_system");});
+//	$("div[id=test1]").click(function() {
+//	window.open("http://google.com", "_system");});
 // When link is clicked
-	$("div[id=test2]").click(function() {
-	cordova.InAppBrowser.open("http://google.com", "_system");});
+//	$("div[id=test2]").click(function() {
+//	cordova.InAppBrowser.open("http://google.com", "_system");});
 // When link is clicked
-	$("div[id=test3]").click(function() {
-	cordova.InAppBrowser.open("http://google.com", "_blank", "location=yes");});
-});
+//	$("div[id=test3]").click(function() {
+//	cordova.InAppBrowser.open("http://google.com", "_blank", "location=yes");});
+//});

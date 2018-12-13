@@ -116,10 +116,12 @@ $(document).ready(function() {
  	$(".rulings").toggleClass('hiderulings');
       });
 	 
+	 
+	 
 	// external link test
-//window.open("http://google.com", "_system");
-
-
+$(document).ready(function() {
+cordova.InAppBrowser.open("http://google.com", "_system");
+});
 
 
 

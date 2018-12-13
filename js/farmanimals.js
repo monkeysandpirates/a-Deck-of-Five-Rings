@@ -119,9 +119,9 @@ $(document).ready(function() {
 	 
 	 
 	// external link test
-$(document).ready(function() {
-cordova.InAppBrowser.open("http://google.com", "_system");
-});
+//$(document).ready(function() {
+//cordova.InAppBrowser.open("http://google.com", "_system");
+//});
 
 
 

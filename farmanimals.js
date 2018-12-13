@@ -119,7 +119,7 @@ $(document).ready(function() {
 	// external link test
 //
 $(document).ready(function() {
-window.open("http://google.com", "_system");
+cordova.InAppBrowser.open("http://google.com", "_system");
 });
 
 

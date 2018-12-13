@@ -117,7 +117,11 @@ $(document).ready(function() {
       });
 	 
 	// external link test
-//window.open("http://google.com", "-system");
+window.open("http://google.com", "_system");
+
+
+
+
 
 // more external link test
 //	$(document).bind('pageinit', function() {
